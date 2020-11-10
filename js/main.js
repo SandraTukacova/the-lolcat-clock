@@ -17,28 +17,28 @@ var bedTimeSelector = document.getElementById("bedTimeSelector");
 var updateClock = function () {
     var message = document.getElementById('timeEvent');
     var image = document.getElementById('lolcat');
-    image.src = "../img/lolcat-default.png";
+    image.src = "img/lolcat-default.png";
 
     if (time == partyTime) {
         messageText = "It's party time! Yay!";
-        image.src = "../img/lolcat-party-time.png";
+        image.src = "img/lolcat-party-time.png";
     } else if (time == lunchTime) {
-        image.src = "../img/lolcat-lunch-time.png";
+        image.src = "img/lolcat-lunch-time.png";
         messageText = "Hooray! It's lunch time!";
     } else if (time == napTime) {
         messageText = "It's time for a cat nap!";
-        image.src = "../img/lolcat-sleepy-time.png";
+        image.src = "img/lolcat-sleepy-time.png";
     } else if (time == wakeUp) {
         messageText = "Wakey-wakey, darling!";
-        image.src = "../img/lolcat-wakeup-time.png";
+        image.src = "img/lolcat-wakeup-time.png";
     } else if (time == bedTime) {
         messageText = "It's time to hit the sack!";
-        image.src = "../img/lolcat-sleepy-time.png";
+        image.src = "img/lolcat-sleepy-time.png";
     } else if (time < noon) {
         messageText = "Good morning, sweetie!";
     } else if (time > evening) {
         messageText = "Good Evening!";
-        image.src = "../img/lolcat-evening.png";
+        image.src = "img/lolcat-evening.png";
     } else {
         messageText = "Good afternoon!";
     }
